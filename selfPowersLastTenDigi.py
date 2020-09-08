@@ -4,8 +4,7 @@ def seriesSum(n):
     for i in range(n):
         tot += pow(i+1,i+1)
     res = str(tot)[-10::] #[first:last:-1] for str reverse
-    print(res)
-    return True;
+    return res;
 
-n = int(input('Input number?'))
-seriesSum(n)
+n = int(input('Input number: '))
+print(seriesSum(n))
