@@ -3,8 +3,6 @@ def checkTriangleWord(val, n):
     for i in range(n):
         if(0.5*i*(i+1) == val):
             return True
-        else:
-            continue
     return False
 
 strInput = input('Enter word:')
