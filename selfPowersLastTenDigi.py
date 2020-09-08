@@ -3,7 +3,7 @@ def seriesSum(n):
     tot = 0
     for i in range(n):
         tot += pow(i+1,i+1)
-    res = str(tot)[-10::]
+    res = str(tot)[-10::] #[first:last:-1] for str reverse
     print(res)
     return True;
 
