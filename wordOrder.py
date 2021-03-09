@@ -11,3 +11,16 @@ for line in lines:
 
 print(len(lines))
 print(' '.join(map(str, occ)))
+
+#Another method
+import sys
+from itertools import groupby
+lines = [x.strip('\n') for x in sys.stdin.readlines()]
+lines.pop(0)
+lines = sorted(lines)
+a = []
+for key, val in groupby(lines):
+    a.append(len(list(val)))
+print(len(a)) 
+for i in sorted(a, reverse=True):
+    print(i),
