@@ -11,8 +11,8 @@ class Solution:
                 tempStr.append(ip[i-1])
                 tempCount+=1
             elif ip[i] == ip[i-1]:
-                tempCount = 1
                 tempStr = []
+                tempCount = 1
             i-=1
             count.append(tempCount)
             Solution.subCount(i, ip, count)
