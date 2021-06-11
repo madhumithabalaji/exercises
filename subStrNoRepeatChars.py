@@ -1,3 +1,7 @@
+    
+ #Input: bababadvadv, abcabcbb, pwwkew
+ #Problem Statement: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+    
 class Solution:    
     def subCount(i, ip, count):
         tempCount, tempStr = 1, []
@@ -17,3 +21,4 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         count = []
         return Solution.subCount(-1,s,count)
+
